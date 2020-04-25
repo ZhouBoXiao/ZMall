@@ -4,7 +4,10 @@ import java.util.Arrays;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
+import com.devotion.zmall.member.feign.CouponFeignService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,11 +28,31 @@ import com.devotion.common.utils.R;
  * @email apayaduo@gmail.com
  * @date 2020-04-23 23:06:35
  */
+@RefreshScope
 @RestController
 @RequestMapping("member/member")
 public class MemberController {
     @Autowired
     private MemberService memberService;
+
+    @Autowired
+    CouponFeignService couponFeignService;
+
+//    @Value("${member.nickname}")
+//    private  String nickname;
+//
+//    @Value("$member.age")
+//    private  Integer age;
+
+    @RequestMapping("/coupons")
+    public R test() {
+        MemberEntity memberEntity = new MemberEntity();
+        memberEntity.setNickname("zhangsan");
+
+        R membercoupons = couponFeignService.membercoupons();
+        return R.ok().put("member", memberEntity).put("coupons", membercoupons.get("coupons"));
+    }
+
 
     /**
      * 列表

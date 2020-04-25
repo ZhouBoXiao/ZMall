@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package io.renren.config;
+package com.devotion.zmall.gateway.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
@@ -17,10 +17,10 @@ public class CorsConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-//        registry.addMapping("/**")
-//            .allowedOrigins("*")
-//            .allowCredentials(true)
-//            .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-//            .maxAge(3600);
+        registry.addMapping("/**")
+            .allowedOrigins("*")
+            .allowCredentials(true)
+            .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+            .maxAge(3600);
     }
 }

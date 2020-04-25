@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: after_route
+          uri: https://example.org
+          predicates:
+            - Cookie=mycookie,mycookievalue
+        - id: product_route
+          uri: lb://zmall-product
+          predicate:
+            - Path=/api/product/**
+          filter:
+            - RewritePath=/api/(?<segement>.*), /$\{segement}
+
+        - id: admin_route
+          uri: lb://renren-fast
+          predicate:
+            - Path=/api/**
+          filter:
+            - RewritePath=/api/(?<segement>.*), /renren-fast/$\{segement}

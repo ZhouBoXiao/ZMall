@@ -51,6 +51,7 @@
 	</properties>
 
 	<dependencies>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -231,6 +232,11 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>${lombok.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.devotion.zmall</groupId>
+			<artifactId>zmall-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
