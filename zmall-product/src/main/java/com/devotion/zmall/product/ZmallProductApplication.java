@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
-@MapperScan("com.devotion.zmall.product.dao")
+//@MapperScan("com.devotion.zmall.product.dao")
 @SpringBootApplication
 public class ZmallProductApplication {
 

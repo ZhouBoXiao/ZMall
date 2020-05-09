@@ -9,7 +9,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @EnableFeignClients(basePackages = "com.devotion.zmall.member.feign")
 @EnableDiscoveryClient
-@MapperScan("com.devotion.zmall.member.dao")
+//@MapperScan("com.devotion.zmall.member.dao")
 @SpringBootApplication
 public class ZmallMemberApplication {
 
