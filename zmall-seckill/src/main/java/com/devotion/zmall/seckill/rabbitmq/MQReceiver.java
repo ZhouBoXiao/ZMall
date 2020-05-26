@@ -1,14 +1,14 @@
 package com.devotion.zmall.seckill.rabbitmq;
 
-import com.geekq.miaosha.domain.MiaoshaOrder;
-import com.geekq.miaosha.domain.MiaoshaUser;
-import com.geekq.miaosha.redis.RedisService;
-import com.geekq.miaosha.service.GoodsService;
-import com.geekq.miaosha.service.MiaoShaMessageService;
-import com.geekq.miaosha.service.MiaoshaService;
-import com.geekq.miaosha.service.OrderService;
-import com.geekq.miaosha.vo.GoodsVo;
-import com.geekq.miaosha.vo.MiaoShaMessageVo;
+import com.devotion.zmall.seckill.domain.MiaoshaOrder;
+import com.devotion.zmall.seckill.domain.MiaoshaUser;
+import com.devotion.zmall.seckill.redis.RedisService;
+import com.devotion.zmall.seckill.service.GoodsService;
+import com.devotion.zmall.seckill.service.MiaoShaMessageService;
+import com.devotion.zmall.seckill.service.MiaoshaService;
+import com.devotion.zmall.seckill.service.OrderService;
+import com.devotion.zmall.seckill.vo.GoodsVo;
+import com.devotion.zmall.seckill.vo.MiaoShaMessageVo;
 import com.rabbitmq.client.Channel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

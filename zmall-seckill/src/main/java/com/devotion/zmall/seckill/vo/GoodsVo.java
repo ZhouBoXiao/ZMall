@@ -1,6 +1,8 @@
 package com.devotion.zmall.seckill.vo;
 
-import com.geekq.miaosha.domain.Goods;
+
+import com.devotion.zmall.seckill.domain.Goods;
+import lombok.*;
 
 import java.util.Date;
 

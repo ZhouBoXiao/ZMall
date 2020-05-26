@@ -1,8 +1,8 @@
 package com.devotion.zmall.seckill.config;
 
-import com.geekq.miaosha.access.UserContext;
-import com.geekq.miaosha.domain.MiaoshaUser;
-import com.geekq.miaosha.service.MiaoShaUserService;
+import com.devotion.zmall.seckill.access.UserContext;
+import com.devotion.zmall.seckill.domain.MiaoshaUser;
+import com.devotion.zmall.seckill.service.MiaoShaUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.MethodParameter;
 import org.springframework.stereotype.Service;

@@ -1,8 +1,8 @@
 package com.devotion.zmall.seckill.service;
 
-import com.geekq.miaosha.dao.GoodsDao;
-import com.geekq.miaosha.domain.MiaoshaGoods;
-import com.geekq.miaosha.vo.GoodsVo;
+import com.devotion.zmall.seckill.dao.GoodsDao;
+import com.devotion.zmall.seckill.domain.MiaoshaGoods;
+import com.devotion.zmall.seckill.vo.GoodsVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

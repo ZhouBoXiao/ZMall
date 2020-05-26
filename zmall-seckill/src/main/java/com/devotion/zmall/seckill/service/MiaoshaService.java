@@ -1,13 +1,13 @@
 package com.devotion.zmall.seckill.service;
 
-import com.geekq.miaosha.domain.MiaoshaOrder;
-import com.geekq.miaosha.domain.MiaoshaUser;
-import com.geekq.miaosha.domain.OrderInfo;
-import com.geekq.miaosha.redis.MiaoshaKey;
-import com.geekq.miaosha.redis.RedisService;
-import com.geekq.miaosha.utils.MD5Utils;
-import com.geekq.miaosha.utils.UUIDUtil;
-import com.geekq.miaosha.vo.GoodsVo;
+import com.devotion.zmall.seckill.domain.MiaoshaOrder;
+import com.devotion.zmall.seckill.domain.MiaoshaUser;
+import com.devotion.zmall.seckill.domain.OrderInfo;
+import com.devotion.zmall.seckill.redis.MiaoshaKey;
+import com.devotion.zmall.seckill.redis.RedisService;
+import com.devotion.zmall.seckill.utils.MD5Utils;
+import com.devotion.zmall.seckill.utils.UUIDUtil;
+import com.devotion.zmall.seckill.vo.GoodsVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

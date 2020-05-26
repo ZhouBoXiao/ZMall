@@ -1,9 +1,9 @@
 package com.devotion.zmall.seckill.service;
 
-import com.geekq.miaosha.dao.MiaoShaMessageDao;
-import com.geekq.miaosha.domain.MiaoShaMessageInfo;
-import com.geekq.miaosha.domain.MiaoShaMessageUser;
-import com.geekq.miaosha.vo.MiaoShaMessageVo;
+import com.devotion.zmall.seckill.dao.MiaoShaMessageDao;
+import com.devotion.zmall.seckill.domain.MiaoShaMessageInfo;
+import com.devotion.zmall.seckill.domain.MiaoShaMessageUser;
+import com.devotion.zmall.seckill.vo.MiaoShaMessageVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

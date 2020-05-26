@@ -1,9 +1,7 @@
 package com.devotion.zmall.seckill.mybatis.controller;
 
-import com.geekq.miaosha.mybatis.Mapper.UserMapper;
-import com.geekq.miaosha.mybatis.entity.User;
-import com.geekq.miaosha.mybatis.vo.TeacherListVo;
-import com.geekq.miaosha.mybatis.vo.TeacherVo;
+import com.devotion.zmall.seckill.domain.User;
+import com.devotion.zmall.seckill.mybatis.Mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

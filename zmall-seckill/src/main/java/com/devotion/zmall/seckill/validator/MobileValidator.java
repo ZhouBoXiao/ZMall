@@ -1,6 +1,6 @@
 package com.devotion.zmall.seckill.validator;
 
-import com.geekq.miaosha.utils.ValidatorUtil;
+import com.devotion.zmall.seckill.utils.ValidatorUtil;
 import org.apache.commons.lang3.StringUtils;
 
 import javax.validation.ConstraintValidator;

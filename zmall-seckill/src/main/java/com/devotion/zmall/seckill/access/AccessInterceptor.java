@@ -1,11 +1,10 @@
 package com.devotion.zmall.seckill.access;
 
 import com.alibaba.fastjson.JSON;
-import com.geekq.miaosha.common.enums.ResultStatus;
-import com.geekq.miaosha.common.resultbean.ResultGeekQ;
-import com.geekq.miaosha.domain.MiaoshaUser;
-import com.geekq.miaosha.redis.RedisService;
-import com.geekq.miaosha.service.MiaoShaUserService;
+
+import com.devotion.zmall.seckill.domain.MiaoshaUser;
+import com.devotion.zmall.seckill.redis.RedisService;
+import com.devotion.zmall.seckill.service.MiaoShaUserService;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,8 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.OutputStream;
 
-import static com.geekq.miaosha.common.enums.ResultStatus.ACCESS_LIMIT_REACHED;
-import static com.geekq.miaosha.common.enums.ResultStatus.SESSION_ERROR;
+
 
 @Service
 public class AccessInterceptor  extends HandlerInterceptorAdapter{

@@ -26,7 +26,7 @@ public class RedisUtil {
 	/**
      * 前缀
      */
-    public static final String KEY_PREFIX_VALUE = "itstyle:seckill:value:";
+    public static final String KEY_PREFIX_VALUE = "seckill:value:";
 
 	
 	/**

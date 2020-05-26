@@ -2,7 +2,6 @@ package com.devotion.zmall.seckill.redis.redismanager;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import redis.clients.jedis.Jedis;
 
 import java.util.ArrayList;
 import java.util.List;

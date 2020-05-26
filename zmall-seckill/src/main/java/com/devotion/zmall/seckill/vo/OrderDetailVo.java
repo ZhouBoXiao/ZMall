@@ -1,6 +1,6 @@
 package com.devotion.zmall.seckill.vo;
 
-import com.geekq.miaosha.domain.OrderInfo;
+import com.devotion.zmall.seckill.domain.OrderInfo;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

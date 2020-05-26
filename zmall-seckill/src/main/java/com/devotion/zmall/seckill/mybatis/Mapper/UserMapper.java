@@ -1,9 +1,9 @@
 package com.devotion.zmall.seckill.mybatis.Mapper;
 
 
-import com.geekq.miaosha.mybatis.entity.User;
-import com.geekq.miaosha.mybatis.vo.TeacherListVo;
-import com.geekq.miaosha.mybatis.vo.TeacherVo;
+import com.devotion.zmall.seckill.domain.User;
+import com.devotion.zmall.seckill.mybatis.vo.TeacherListVo;
+import com.devotion.zmall.seckill.mybatis.vo.TeacherVo;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

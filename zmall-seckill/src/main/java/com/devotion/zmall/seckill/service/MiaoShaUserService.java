@@ -1,14 +1,15 @@
 package com.devotion.zmall.seckill.service;
 
-import com.geekq.miaosha.dao.MiaoShaUserDao;
-import com.geekq.miaosha.domain.MiaoshaUser;
-import com.geekq.miaosha.exception.GlobleException;
-import com.geekq.miaosha.rabbitmq.MQSender;
-import com.geekq.miaosha.redis.MiaoShaUserKey;
-import com.geekq.miaosha.redis.RedisService;
-import com.geekq.miaosha.utils.MD5Utils;
-import com.geekq.miaosha.utils.UUIDUtil;
-import com.geekq.miaosha.vo.LoginVo;
+import com.devotion.zmall.seckill.common.enums.ResultStatus;
+import com.devotion.zmall.seckill.dao.MiaoShaUserDao;
+import com.devotion.zmall.seckill.domain.MiaoshaUser;
+import com.devotion.zmall.seckill.exception.GlobleException;
+import com.devotion.zmall.seckill.rabbitmq.MQSender;
+import com.devotion.zmall.seckill.redis.MiaoShaUserKey;
+import com.devotion.zmall.seckill.redis.RedisService;
+import com.devotion.zmall.seckill.utils.MD5Utils;
+import com.devotion.zmall.seckill.utils.UUIDUtil;
+import com.devotion.zmall.seckill.vo.LoginVo;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,12 +20,11 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
 
-import static com.geekq.miaosha.common.enums.ResultStatus.*;
-
 @Service
 public class MiaoShaUserService {
 
     public static final String COOKIE_NAME_TOKEN = "token" ;
+    private static final ResultStatus MOBILE_NOT_EXIST = ;
     private static Logger logger = LoggerFactory.getLogger(MiaoShaUserService.class);
 
     @Autowired
@@ -42,7 +42,7 @@ public class MiaoShaUserService {
         if(StringUtils.isEmpty(token)){
             return null ;
         }
-        MiaoshaUser user =redisService.get(MiaoShaUserKey.token,token,MiaoshaUser.class) ;
+        MiaoshaUser user =redisService.get(MiaoShaUserKey.token, token, MiaoshaUser.class) ;
         if(user!=null) {
             addCookie(response, token, user);
         }

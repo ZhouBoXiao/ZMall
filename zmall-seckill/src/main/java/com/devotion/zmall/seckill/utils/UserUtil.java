@@ -1,6 +1,7 @@
 package com.devotion.zmall.seckill.utils;
 
-import com.geekq.miaosha.domain.MiaoshaUser;
+
+import com.devotion.zmall.seckill.domain.MiaoshaUser;
 
 import java.io.*;
 import java.net.HttpURLConnection;

@@ -1,6 +1,7 @@
 package com.devotion.zmall.seckill.rabbitmq;
 
-import com.geekq.miaosha.domain.MiaoshaUser;
+
+import com.devotion.zmall.seckill.domain.MiaoshaUser;
 
 public class MiaoshaMessage {
 	private MiaoshaUser user;

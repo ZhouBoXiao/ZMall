@@ -1,14 +1,14 @@
 package com.devotion.zmall.seckill.controller;
 
-import com.geekq.miaosha.redis.KeyPrefix;
-import com.geekq.miaosha.redis.RedisService;
+import com.devotion.zmall.seckill.redis.KeyPrefix;
+import com.devotion.zmall.seckill.redis.RedisService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.thymeleaf.context.WebContext;
-import org.thymeleaf.spring4.view.ThymeleafViewResolver;
+import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

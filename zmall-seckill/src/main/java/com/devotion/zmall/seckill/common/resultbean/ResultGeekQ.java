@@ -1,6 +1,6 @@
 package com.devotion.zmall.seckill.common.resultbean;
 
-import com.geekq.miaosha.common.enums.ResultStatus;
+import com.devotion.zmall.seckill.common.enums.ResultStatus;
 
 import java.io.Serializable;
 

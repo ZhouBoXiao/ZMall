@@ -1,6 +1,6 @@
 package com.devotion.zmall.seckill.vo;
 
-import com.geekq.miaosha.validator.MobileCheck;
+import com.devotion.zmall.seckill.validator.MobileCheck;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

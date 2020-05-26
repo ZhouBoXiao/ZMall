@@ -1,13 +1,13 @@
 package com.devotion.zmall.seckill.service;
 
-import com.geekq.miaosha.dao.OrderDao;
-import com.geekq.miaosha.domain.MiaoshaOrder;
-import com.geekq.miaosha.domain.MiaoshaUser;
-import com.geekq.miaosha.domain.OrderInfo;
-import com.geekq.miaosha.redis.OrderKey;
-import com.geekq.miaosha.redis.RedisService;
-import com.geekq.miaosha.utils.DateTimeUtils;
-import com.geekq.miaosha.vo.GoodsVo;
+import com.devotion.zmall.seckill.dao.OrderDao;
+import com.devotion.zmall.seckill.domain.MiaoshaOrder;
+import com.devotion.zmall.seckill.domain.MiaoshaUser;
+import com.devotion.zmall.seckill.domain.OrderInfo;
+import com.devotion.zmall.seckill.redis.OrderKey;
+import com.devotion.zmall.seckill.redis.RedisService;
+import com.devotion.zmall.seckill.utils.DateTimeUtils;
+import com.devotion.zmall.seckill.vo.GoodsVo;
 import org.apache.commons.lang3.time.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.Date;
 import java.util.List;
 
-import static com.geekq.miaosha.common.Constanst.orderStaus.ORDER_NOT_PAY;
 
 @Service
 public class OrderService {
@@ -28,7 +27,7 @@ public class OrderService {
 	private RedisService redisService ;
 	
 	public MiaoshaOrder getMiaoshaOrderByUserIdGoodsId(long userId, long goodsId) {
-		return	redisService.get(OrderKey.getMiaoshaOrderByUidGid,""+userId+"_"+goodsId,MiaoshaOrder.class) ;
+		return	redisService.get(OrderKey.getMiaoshaOrderByUidGid, ""+userId+"_"+goodsId, MiaoshaOrder.class) ;
 	}
 
 	public OrderInfo getOrderById(long orderId) {

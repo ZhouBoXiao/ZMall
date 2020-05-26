@@ -1,6 +1,7 @@
 package com.devotion.zmall.seckill.common.resultbean;
 
-import com.geekq.miaosha.common.enums.ResultStatus;
+
+import com.devotion.zmall.seckill.common.enums.ResultStatus;
 
 public class AbstractResult {
     private ResultStatus status;

@@ -1,10 +1,9 @@
 package com.devotion.zmall.seckill.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.geekq.miaosha.common.resultbean.ResultGeekQ;
-import com.geekq.miaosha.redis.redismanager.RedisLua;
-import com.geekq.miaosha.service.MiaoShaUserService;
-import com.geekq.miaosha.vo.LoginVo;
+import com.devotion.zmall.seckill.redis.redismanager.RedisLua;
+import com.devotion.zmall.seckill.service.MiaoShaUserService;
+import com.devotion.zmall.seckill.vo.LoginVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +14,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
-
-import static com.geekq.miaosha.common.Constanst.COUNTLOGIN;
 
 @Controller
 @RequestMapping("/login")

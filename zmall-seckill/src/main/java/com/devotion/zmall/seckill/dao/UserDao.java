@@ -1,6 +1,6 @@
 package com.devotion.zmall.seckill.dao;
 
-import com.geekq.miaosha.domain.User;
+import com.devotion.zmall.seckill.domain.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

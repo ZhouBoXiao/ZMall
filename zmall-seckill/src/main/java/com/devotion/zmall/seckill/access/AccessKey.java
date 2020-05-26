@@ -1,6 +1,7 @@
 package com.devotion.zmall.seckill.access;
 
-import com.geekq.miaosha.redis.BasePrefix;
+
+import com.devotion.zmall.seckill.redis.BasePrefix;
 
 public class AccessKey extends BasePrefix {
 

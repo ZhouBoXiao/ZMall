@@ -1,6 +1,7 @@
 package com.devotion.zmall.seckill.access;
 
-import com.geekq.miaosha.domain.MiaoshaUser;
+
+import com.devotion.zmall.seckill.domain.MiaoshaUser;
 
 public class UserContext {
 	

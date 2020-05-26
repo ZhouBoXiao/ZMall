@@ -1,7 +1,8 @@
 package com.devotion.zmall.seckill.dao;
 
-import com.geekq.miaosha.domain.MiaoshaOrder;
-import com.geekq.miaosha.domain.OrderInfo;
+import com.devotion.zmall.seckill.domain.MiaoshaOrder;
+import com.devotion.zmall.seckill.domain.OrderInfo;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 

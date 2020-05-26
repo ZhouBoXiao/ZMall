@@ -1,13 +1,13 @@
 package com.devotion.zmall.seckill.controller;
 
-import com.geekq.miaosha.common.resultbean.ResultGeekQ;
-import com.geekq.miaosha.domain.MiaoshaUser;
-import com.geekq.miaosha.redis.GoodsKey;
-import com.geekq.miaosha.redis.RedisService;
-import com.geekq.miaosha.service.GoodsService;
-import com.geekq.miaosha.service.MiaoShaUserService;
-import com.geekq.miaosha.vo.GoodsDetailVo;
-import com.geekq.miaosha.vo.GoodsVo;
+import com.devotion.zmall.seckill.common.resultbean.ResultGeekQ;
+import com.devotion.zmall.seckill.domain.MiaoshaUser;
+import com.devotion.zmall.seckill.redis.GoodsKey;
+import com.devotion.zmall.seckill.redis.RedisService;
+import com.devotion.zmall.seckill.service.GoodsService;
+import com.devotion.zmall.seckill.service.MiaoShaUserService;
+import com.devotion.zmall.seckill.vo.GoodsDetailVo;
+import com.devotion.zmall.seckill.vo.GoodsVo;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,8 +18,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.thymeleaf.spring4.context.SpringWebContext;
-import org.thymeleaf.spring4.view.ThymeleafViewResolver;
+import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -56,7 +55,7 @@ public class GoodsController extends BaseController {
         model.addAttribute("user", user);
         List<GoodsVo> goodsList = goodsService.listGoodsVo();
         model.addAttribute("goodsList", goodsList);
-        return render(request,response,model,"goods_list",GoodsKey.getGoodsList,"");
+        return render(request, response, model, "goods_list", GoodsKey.getGoodsList, "");
     }
 
     @RequestMapping(value="/to_detail2/{goodsId}",produces="text/html")
@@ -112,8 +111,8 @@ public class GoodsController extends BaseController {
      */
     @RequestMapping(value="/detail/{goodsId}")
     @ResponseBody
-    public ResultGeekQ<GoodsDetailVo> detail(HttpServletRequest request, HttpServletResponse response, Model model,MiaoshaUser user,
-                                        @PathVariable("goodsId")long goodsId) {
+    public ResultGeekQ<GoodsDetailVo> detail(HttpServletRequest request, HttpServletResponse response, Model model, MiaoshaUser user,
+                                             @PathVariable("goodsId")long goodsId) {
         ResultGeekQ<GoodsDetailVo> result = ResultGeekQ.build();
         GoodsVo goods = goodsService.getGoodsVoByGoodsId(goodsId);
         long startAt = goods.getStartDate().getTime();

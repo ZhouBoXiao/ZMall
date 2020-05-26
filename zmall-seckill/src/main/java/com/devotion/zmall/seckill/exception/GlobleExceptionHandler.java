@@ -1,6 +1,7 @@
 package com.devotion.zmall.seckill.exception;
 
-import com.geekq.miaosha.common.resultbean.ResultGeekQ;
+
+import com.devotion.zmall.seckill.common.resultbean.ResultGeekQ;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.validation.BindException;
@@ -12,8 +13,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
-import static com.geekq.miaosha.common.enums.ResultStatus.SESSION_ERROR;
-import static com.geekq.miaosha.common.enums.ResultStatus.SYSTEM_ERROR;
 
 /**
  * 拦截异常

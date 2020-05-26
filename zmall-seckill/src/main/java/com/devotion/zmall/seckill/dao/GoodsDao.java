@@ -1,7 +1,7 @@
 package com.devotion.zmall.seckill.dao;
 
-import com.geekq.miaosha.domain.MiaoshaGoods;
-import com.geekq.miaosha.vo.GoodsVo;
+import com.devotion.zmall.seckill.domain.MiaoshaGoods;
+import com.devotion.zmall.seckill.vo.GoodsVo;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;

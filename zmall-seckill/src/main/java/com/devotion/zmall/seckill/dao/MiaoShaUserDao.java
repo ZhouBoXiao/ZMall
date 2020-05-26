@@ -1,6 +1,7 @@
 package com.devotion.zmall.seckill.dao;
 
-import com.geekq.miaosha.domain.MiaoshaUser;
+import com.devotion.zmall.seckill.domain.MiaoshaUser;
+import org.apache.ibatis.annotations.*;
 
 @Mapper
 public interface MiaoShaUserDao {
